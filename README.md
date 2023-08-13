@@ -1,12 +1,12 @@
 # Stackler
 An esoteric language, we love stacks indeed
 Following are the commands in the language:
-> Rotate right on the current stack
+\> Rotate right on the current stack
 < Rotate left on the current stack
 w Move one stack up
 s Move one stack down
-+ add the two top numbers on the current stack
-- subtract the top two numbers on the current stack (reverse polish style)
+\+ add the two top numbers on the current stack
+\- subtract the top two numbers on the current stack (reverse polish style)
 * multiply the two top numbers on the current stack
 / divide the two top numbers on the current stack (again reverse polish)
 { Jump to matching } if top stack is empty
