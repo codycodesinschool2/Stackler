@@ -9,6 +9,7 @@ try:
 except IndexError:
     print("A file is required")
 def runCommand(com):
+    global STACK,stackPtr,codePtr,code
     if com == ">":
         STACK[stackPtr].insert(0,STACK[stackPtr].pop())
     if com == "<":
@@ -96,9 +97,9 @@ def runCommand(com):
     if com == "o":
         STACK[stackPtr].append(0)
     if com == "p":
-        STACK[stackPtr] += 1
+        STACK[stackPtr][-1] += 1
     if com == "l":
-        STACK[stackPtr] -= 1
+        STACK[stackPtr][-1] -= 1
     if com == "k":
         STACK.append([])
     if com == "v":
