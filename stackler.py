@@ -1,5 +1,5 @@
 import sys
-STACK = []
+STACK = [[]]
 code = ""
 codePtr = 0
 stackPtr = 0
